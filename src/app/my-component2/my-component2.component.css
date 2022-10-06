@@ -1,0 +1,12 @@
+.success {
+  color: green;
+}
+.primary {
+  color: blue;
+}
+.danger {
+  color: red;
+}
+.warning {
+  color: yellow;
+}

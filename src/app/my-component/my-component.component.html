@@ -1,0 +1,29 @@
+<p>my-component works!</p>
+
+<p>Mi nombre es: {{ name }},</p>
+
+<p [style.background]="edad >= 18 ? 'red' : 'green'" [style.color]="'white'">
+  tu edad es: {{ edad }},
+</p>
+
+<button (click)="aumentarEdad()">Aumentar</button>
+<button (click)="restarEdad()">Restar</button>
+
+<h3 *ngIf="edad >= 18">Es mayor de Edad</h3>
+<h3 *ngIf="edad < 18">Es menor de Edad</h3>
+
+<h3>Lista de Nombres</h3>
+<p>{{ nombres }}</p>
+<p>{{ nombres[0] }}</p>
+
+<ul>
+  <li *ngFor="let nombre of nombres; let indice = index">
+    {{ indice + 1 + ". " + nombre }}
+  </li>
+</ul>
+
+<p>
+  <ng-container *ngIf="edad >= 18">
+    <span>{{ name }}</span>
+  </ng-container>
+</p>
